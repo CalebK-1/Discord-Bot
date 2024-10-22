@@ -1,1 +1,1 @@
-
+This is my personal discord bot. It's meant to be a goofy personal project. I put in in a public GitHub repository because I wanted to be able to push new updates from my Windows machine and pull updates as needed from my VM running Docker. There's probably a much easier way to do it, but it's good to get GitHub experience anyways. Thanks for reading.
