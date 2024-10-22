@@ -94,7 +94,6 @@ def main() -> None:
             "Outlook not so good.",
             "Very doubtful.",
         ]
-
         await ctx.send(answers[random.randint(0, len(answers) - 1)])
 
     # Add roles
