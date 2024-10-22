@@ -20,7 +20,8 @@ async def run(client: discord.Object) -> None:
         username: str = str(message.author)
         message_content: str = message.content
         channel: str = str(message.channel)
-        logger.info((f"[{channel}] {username}: {message_content}"))
+        guild = message.guild
+        logger.info((f"[{guild}][{channel}] {username}: {message_content}"))
 
         if message.content[0] == "?":
             return

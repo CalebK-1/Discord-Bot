@@ -32,8 +32,11 @@ def main() -> None:
     # Handling startup
     @client.event
     async def on_ready() -> None:
+        guild_names_string = ""
+        for num in range(0, len(client.guilds)):
+            guild_names_string = guild_names_string + client.guilds[num].name + ", "
         logger.info(f"User: {client.user} (ID: {client.user.id})")
-        # print("{client.user} is now running!")
+        logger.info(f"Running in servers: {guild_names_string}")
 
         # Runs other files concurrently
         await responses.run(client)
